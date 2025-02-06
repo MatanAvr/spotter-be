@@ -24,7 +24,7 @@ def get_route(request):
 
     calc_start_time = time.time()
     route_manager = RouteManager()
-    data = route_manager.calc_optimized_route(route_manager)
+    data = route_manager.calc_optimized_route(route_data)
     calc_end_time = time.time()
 
     api_runtime = api_end_time - api_start_time
